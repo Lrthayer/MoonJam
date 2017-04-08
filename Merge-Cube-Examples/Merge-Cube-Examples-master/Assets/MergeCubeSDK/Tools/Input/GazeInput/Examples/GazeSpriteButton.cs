@@ -61,11 +61,14 @@ public class GazeSpriteButton : MonoBehaviour, GazeResponder
 			image.sprite = downState;
 
 		image.color = downColor;
+
+
 	}
 
 	public void OnGazeTriggerEnd()
 	{
 		OnGazeInputEnd.Invoke();
+
 
 		if (isGazing && defaultState != null)
 		{

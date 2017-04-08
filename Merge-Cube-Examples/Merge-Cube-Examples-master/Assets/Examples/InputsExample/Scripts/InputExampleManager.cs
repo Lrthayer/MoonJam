@@ -69,6 +69,11 @@ public class InputExampleManager : MonoBehaviour
 		}
 	}
 		
+	public void CubeDelete()
+	{
+		
+		Destroy (GameObject.FindGameObjectWithTag("cylinder"));
+	}
 	//Cycles through a set integer range and updates the cube's texture color accordingly.
 	public void NextClick()
 	{
